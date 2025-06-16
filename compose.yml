@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  flask_app:
+    build: .
+    container_name: katevoe
+    environment:
+      - FLASK_ENV=production
+    ports:
+      - "1190:1190"
+    volumes:
+      - ./static:/app/static
+      - ./templates:/app/templates
+    restart: unless-stopped
