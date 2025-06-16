@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kate Voenkova - Student</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body data-theme="dark">
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">Kate Voenkova</div>
+            <nav class="nav-links">
+                <a href="#skills">Skills</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <div class="social-links">
+                    <a href="https://Kate_Voe.t.me/" class="social-link" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://github.com/KateVoenkova?tab=repositories" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hello, I'm <span class="glitch-name">Kate Voenkova</span></h1>
+                <h2>I love <span class="typing-text">design</span><span></span></h2>
+                <p>Crafting digital experiences through code. School student with a passion for math, programming, and elegant solutions.</p>
+                <div class="btn-group">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">My Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-code skill-icon"></i>
+                    <h3>Development</h3>
+                    <p>Python, JavaScript, Vue, Node.js, Flask, a little bit of C++</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-shield-alt skill-icon"></i>
+                    <h3>DevOps</h3>
+                    <p>Linux Administration, Docker, CI/CD</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server skill-icon"></i>
+                    <h3>Math</h3>
+                    <p>Stats & probability, Olympiad tasks, Favorite topics: graph theory</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I graduated from the tenth grade of school with advanced studies in mathematics, computer science and physics. My journey began with mathematics and algorithms in C++, which evolved into a passion for competitive mathematics, interesting tasks, and programming efficient applications.</p>
+                    <p>When I'm not doing math or programming, I participate in project contests, conferences, internships, hackathons, study new technologies, or help organize events.</p>
+                    <p>Currently focused on competitive maths and Python-based solutions, but always excited to explore new topics, languages and frameworks that are beatiful and solve real-world problems.</p>
+                </div>
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <div class="terminal-dot red"></div>
+                            <div class="terminal-dot yellow"></div>
+                            <div class="terminal-dot green"></div>
+                        </div>
+                        <div class="terminal-title">kate@portfolio:~</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-command">whoami</div>
+                        <div class="terminal-output">ekaterina</div>
+                        <div class="terminal-command">cat skills.txt</div>
+                        <div class="terminal-output">Python, JavaScript, Linux, DevOps, Design</div>
+                        <div class="terminal-command">./interests.sh</div>
+                        <div class="terminal-output">Math, Stats, Data, System Design</div>
+                        <div class="terminal-command">hostname</div>
+                        <div class="terminal-output">LAPTOP-UNO00LU5</div>
+                        <div class="terminal-command">$<span class="terminal-cursor"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/LiNet.png') }}" alt="LiNet Logo">
+                    </div>
+                    <div class="project-content">
+                        <h3>LiNet</h3>
+                        <p>Linet - web-based platform for reading and analyzing literary works with the ability to visualize connections between characters. Won a grant from the <a href="https://centraluniversity.ru/" class="project-link" target="_blank">
+                            Central University <i class="link-alt"></i></a></p>
+                        <div class="project-tags">
+                            <span>JS</span>
+                            <span>Full-stack</span>
+                            <span>Python</span>
+                        </div>
+                        <a href="https://sunnyweather.silaeder.codingprojects.ru/" class="project-link" target="_blank">
+                            Visit Site <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <div>
+                        </div>
+                        <a href="https://github.com/KateVoenkova/Result" class="project-link" target="_blank">
+                            View on GitHub <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/FlappyBird.png') }}" alt="Flappy Bird Logo">
+                    </div>
+                    <div class="project-content">
+                        <h3>Flappy Bird</h3>
+                        <p>This is one of my first JS games. You can find others on GitHub.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Yandex API</span>
+                            <span>Desktop App</span>
+                        </div>
+                        <a href="https://yandex.com/games/app/390355?debug-mode=16&draft=true&lang=en" class="project-link" target="_blank">
+                            Visit Site <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <div>
+                        </div>
+                        <a href="https://github.com/KateVoenkova/Kate-s-Bird" class="project-link" target="_blank">
+                            View on GitHub <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='/images/croc.png') }}" alt="CROC Logo">
+                    </div>
+                    <div class="project-content">
+                        <h3>CROC</h3>
+                        <p>Internship at CROC as a team leader. I also helped with the development. The purpose of this internship was to show different methods of working on a product and effective collaboration in a team.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>Docker</span>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1VEWUcJVwJWftAj7WEyFg_CSxjLzuj09t/view?usp=drive_link" class="project-link" target="_blank">
+                            View the certificate <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="https://drive.google.com/file/d/14U3QBMCGTupC8r9Y8ql0OaRu_MWmbgA1/view?usp=drive_link" class="project-link" target="_blank">
+                            What I've been working on <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Let's Connect</h2>
+                <p>Have a project in mind or just want to chat about math or tech? Would you like to see other works? Reach out through any of these channels:</p>
+                <div class="contact-links">
+                    <a href="https://Kate_Voe.t.me/" class="contact-link" target="_blank">
+                        <i class="fab fa-telegram"></i> Telegram
+                    </a>
+                    <a href="https://github.com/KateVoenkova?tab=repositories" class="contact-link" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://sunnyweather.silaeder.codingprojects.ru/" class="contact-link" target="_blank">
+                        <i class="fas fa-globe"></i> LiNet
+                    </a>
+                    <a href="mailto:env906@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Kate Voenkova</div>
+                <p class="footer-tagline">I am studying and trying to become more competent and versatile. </p>
+                <div class="footer-links">
+                    <a href="#skills">Skills</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-bottom">
+                    © <span id="year"></span> Kate Voenkova. Oh captain, my captain.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
